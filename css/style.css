@@ -10,19 +10,32 @@
 body{
     font-size: 1.1rem;
     font-family: Verdana,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	color: var(--black4);
+    color: var(--black);
+    min-height: 4000px;
 }
 .flex{
     display: flex;
 }
-@media (min-width:1100px){.container{max-width:1280px}}
+.container-lg{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width:1100px){
+    .container{max-width:1280px}
+    .container-lg{
+        max-width:1110px
+    }
+}
 .header .header_top{
     padding-top: 25px;
     padding-bottom: 29px;
     background: #ffc200; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffc200 0%, #d09e00 83%, #d09e00 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #ffc200 0%,#d09e00 83%,#d09e00 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #ffc200 0%,#d09e00 83%,#d09e00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top,  #ffc200 0%, #d09e00 99%, #d09e00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffc200 0%,#d09e00 99%,#d09e00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffc200 0%,#d09e00 99%,#d09e00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc200', endColorstr='#d09e00',GradientType=0 ); /* IE6-9 */
 }
 .header .header_contact{
@@ -67,4 +80,169 @@ body{
 .header .header_contact .ico{
     display: block;
     margin-right: 25px;
+}
+.header_bottom{
+    padding-top: 47px;
+    text-align: center;
+    background: #ffffff;
+    position: relative;
+}
+.header_bottom .container{
+    position: relative;
+    z-index: 10;
+}
+.header{
+    overflow: hidden;
+    background: var(--yellow2);
+    padding-bottom: 56px;
+}
+.header_bottom h1{
+    color: var(--black4);
+    font-weight: bold;
+    font-size: 40px;
+    max-width: 900px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    font-family: Verdana,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.header_bottom .logo{
+    margin-bottom: 42px;
+}
+.header_bottom .logo img{
+    max-width: 560px;
+}
+.header_bottom .header_menu ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none!important;
+}
+.header_bottom .header_menu ul li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header_bottom .header_menu ul li a{
+    color: var(--black4);
+    font-size: 24px;
+}
+.header_bottom .header_menu ul li:not(:last-child)::after{
+    content: "";
+    background: #2e2c28;
+    width: 2px;
+    display: block;
+    height: 60px;
+    margin: 0px 75px;
+}
+.header_bottom .header_menu ul li a:hover{
+    color: black;
+}
+.main{
+    min-height: 500px;
+    background: var(--yellow2);
+}
+.header_bottom .line_group{
+    position: absolute;
+    z-index: 10;
+    bottom: -25px;
+    display: flex;
+    width: 100%;
+}
+.header_bottom .line_group .line{
+    background: #ffffff;
+    height: 100px;
+    width: 50%;
+    -webkit-box-shadow: 0 12px 12px -9px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 12px 12px -9px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 12px -9px rgba(0, 0, 0, 0.15);
+}
+.header_bottom .line_group .line.line_lf{
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+    margin-right: -5px;
+}
+.header_bottom .line_group .line.line_rg{
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    margin-left: -5px;
+}
+.main_section{
+    padding-top: 40px;
+}
+h2{
+    color: var(--black);
+    font-size: 40px;
+    margin-bottom: 39px;
+    font-weight: bold;
+    font-family: Verdana,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.cl_form{
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+.cl_form .text_info{
+    margin-bottom: 25px;
+}
+.form_row:not(:last-child){
+    margin-bottom: 30px;
+}
+.form_row label{
+    color: #ffffff;
+}
+.form-control{
+    border-radius: 0px;
+    border: 0px;
+    height: 60px;
+}
+.cl_form .form-control{
+    max-width: 460px;
+}
+.btn_def{
+    height: 80px;
+    border-radius: 6px;
+    color: var(--yellow2);
+    text-transform: uppercase;
+    padding: 0px 70px;
+    border: 0px!important;
+    outline: none!important;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#434242+0,434242+49,2b2a29+50,2b2a29+100 */
+    background: #434242; /* Old browsers */
+    background: -moz-linear-gradient(top,  #434242 0%, #434242 49%, #2b2a29 50%, #2b2a29 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #434242 0%,#434242 49%,#2b2a29 50%,#2b2a29 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #434242 0%,#434242 49%,#2b2a29 50%,#2b2a29 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#434242', endColorstr='#2b2a29',GradientType=0 ); /* IE6-9 */
+}
+.btn_def:hover{
+    opacity: 0.9;
+}
+.section_vd{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+    margin-top: -100px;
+    padding-top: 140px;
+}
+.section_vd::after{
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    background: url('../image/dv-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 973px;
+    height: 1024px;
+    z-index: 5;
 }
