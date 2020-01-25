@@ -1,0 +1,70 @@
+:root{
+    --yellow: #ffc200;
+    --yellow2: #f8ab0b;
+    --red: #ed0000;
+    --black: #2b2a29;
+    --black2: #3d3d3d;
+    --black3: #2e2d2d;
+    --black4: #434242;
+}
+body{
+    font-size: 1.1rem;
+    font-family: Verdana,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	color: var(--black4);
+}
+.flex{
+    display: flex;
+}
+@media (min-width:1100px){.container{max-width:1280px}}
+.header .header_top{
+    padding-top: 25px;
+    padding-bottom: 29px;
+    background: #ffc200; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffc200 0%, #d09e00 83%, #d09e00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffc200 0%,#d09e00 83%,#d09e00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffc200 0%,#d09e00 83%,#d09e00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc200', endColorstr='#d09e00',GradientType=0 ); /* IE6-9 */
+}
+.header .header_contact{
+    justify-content: space-around;
+    font-size: 16px;
+    align-items: center;
+}
+.header .header_contact .item_info .label{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.header .header_contact .item_info .item_cnt{
+    color: var(--black);
+}
+.header .header_contact .item_info .item_cnt a{
+    color: var(--black);
+}
+.ico_pattern{
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+}
+.ico.ico_redphone{
+    background: url('../image/redphone.png');
+    width: 43px;
+    height: 54px;
+}
+.ico.ico_redtime{
+    background: url('../image/redtime.png');
+    width: 53px;
+    height: 54px;
+}
+.ico.ico_redmail{
+    background: url('../image/redmail.png');
+    width: 57px;
+    height: 40px;
+}
+.header .header_contact .item{
+    display: flex;
+    align-items: center;
+}
+.header .header_contact .ico{
+    display: block;
+    margin-right: 25px;
+}
