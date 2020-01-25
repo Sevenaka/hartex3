@@ -32,10 +32,9 @@ body{
     padding-top: 25px;
     padding-bottom: 29px;
     background: #ffc200; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffc200 0%, #d09e00 99%, #d09e00 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #ffc200 0%,#d09e00 99%,#d09e00 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #ffc200 0%,#d09e00 99%,#d09e00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc200', endColorstr='#d09e00',GradientType=0 ); /* IE6-9 */
+    -webkit-box-shadow: inset 0 -27px 20px -9px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -27px 20px -9px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -27px 20px -9px rgba(0, 0, 0, 0.15);
 }
 .header .header_contact{
     justify-content: space-around;
@@ -392,7 +391,7 @@ h2{
 }
 .card_s{
     padding: 84px 44px 31px 44px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -604,6 +603,8 @@ footer{
 }
 .fot_cont .item{
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 .fot_cont .item:not(:last-child){
     margin-bottom: 10px;
@@ -626,4 +627,25 @@ footer{
     flex-wrap: wrap;
     height: 100%;
     align-items: center;
+    position: relative;
+    z-index: 40;
+}
+.ico_yphone{
+    background: url('../image/ico11.png');
+    width: 48px;
+    height: 44px;
+}
+.ico_ytime{
+    background: url('../image/ico222.png');
+    width: 48px;
+    height: 46px;
+}
+.ico_ymail{
+    background: url('../image/ico33.png');
+    width: 48px;
+    height: 29px;
+}
+.fot_cont .ico{
+    display: block;
+    margin-right: 24px;
 }
