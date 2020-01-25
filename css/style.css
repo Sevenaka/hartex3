@@ -11,7 +11,6 @@ body{
     font-size: 1.1rem;
     font-family: Verdana,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     color: var(--black);
-    min-height: 4000px;
 }
 .flex{
     display: flex;
@@ -478,6 +477,7 @@ h2{
     background: var(--black2);
     position: relative;
     z-index: 50;
+    padding-bottom: 64px;
 }
 .section_list .h1{
     position: absolute;
@@ -500,4 +500,105 @@ h2{
     right: -30px;
     top: 0;
     bottom: 0;
+}
+.fav_card{
+    color: #fec400;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.fav_card .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 132px;
+}
+.fav_card p{
+    max-width: 280px;
+    margin: 0px auto;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.fav_card .hr_line{
+    background: #fec400;
+    height: 4px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+}
+.cal_bt_form{
+    padding-top: 50px;
+    color: #ffffff;
+    max-width: 900px;
+    margin: 0px auto;
+}
+.cal_bt_form label{
+    font-size: 18px;
+}
+.cal_bt_form .row{
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.cal_bt_form .row .form_col{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.cal_bt_form  .col_btn{
+    text-align: center;
+    margin-top: 33px;
+}
+.bottom_menu {
+    background: var(--black3);
+    position: relative;
+    z-index: 50;
+}
+.bottom_menu .main_logo{
+    margin-top: -60px;
+    margin-bottom: -60px;
+    display: block;
+}
+.bottom_menu h4{
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-weight: bold;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+footer{
+    background: var(--black2);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer_brends img{
+    max-width: 110px;
+}
+.footer_brends .col-lg-4:not(.last) {
+    margin-bottom: 30px;
+}
+.footer_brends .col-lg-4 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    min-height: 76px;
+}
+.footer_brends .col-lg-4 a .zf{
+    max-width: 60px;
+}
+.footer_brends{
+    text-align: center;
+}
+.footer_bt{
+    background: var(--black3);
+    color: #ffb70f;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
