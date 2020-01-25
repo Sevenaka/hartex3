@@ -143,7 +143,7 @@ a{
     color: black;
 }
 .main{
-    min-height: 500px;
+    min-height: 2500px;
     background: var(--yellow2);
     overflow: hidden;
     margin-top: -100px;
@@ -250,11 +250,13 @@ h2{
     z-index: 10;
 }
 .section_line{
-    min-height: 800px;
     background: var(--black) url('../image/line_bg-min.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: contain;
+    padding-bottom: 80px;
+    padding-top: 150px;
+    position: relative;
 }
 .section_vd .line_group{
     position: absolute;
@@ -283,4 +285,219 @@ h2{
     -o-transform: rotate(-3deg);
     transform: rotate(-3deg);
     margin-left: -5px;
+}
+.ser_card{
+    text-align: center;
+    color: #ffffff;
+}
+.ser_card img{
+    margin-bottom: 70px;
+}
+.ser_card .text{
+    font-size: 20px;
+    margin-bottom: 63px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+.ser_card .text p{
+    margin: 0px auto;
+    max-width: 320px;
+}
+.btn_ye{
+    height: 80px;
+    border-radius: 6px;
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 0px 70px;
+    border: 0px!important;
+    outline: none!important;
+    background: #fdc653;
+    background: -moz-linear-gradient(top, #fdc653 0%, #fdc653 49%, #f8ab0b 50%, #f8ab0b 100%);
+    background: -webkit-linear-gradient(top, #fdc653 0%,#fdc653 49%,#f8ab0b 50%,#f8ab0b 100%);
+    background: linear-gradient(to bottom, #fdc653 0%,#fdc653 49%,#f8ab0b 50%,#f8ab0b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdc653', endColorstr='#f8ab0b',GradientType=0 );
+}
+.btn_ye:hover{
+    opacity: 0.9;
+}
+.section_line .line_group{
+    position: absolute;
+    z-index: 10;
+    bottom: -25px;
+    display: flex;
+    width: 100%;
+}
+.section_line .line_group .line{
+    background: var(--black);
+    height: 100px;
+    width: 60%;
+    position: relative;
+}
+.section_line .line_group .line.line_lf{
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+    margin-right: -5px;
+    margin-left: -30px;
+}
+.section_line .line_group .line.line_lf::after{
+    content: "";
+    height: 27px;
+    width: 100%;
+    background: url('../image/line_grad.png');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.section_line .line_group .line.line_rg{
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    margin-left: -5px;
+    margin-right: -30px;
+}
+.section_line .line_group .line.line_rg::after{
+    content: "";
+    height: 27px;
+    width: 100%;
+    background: url('../image/line_grad.png');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.section_list{
+    position: relative;
+    background: #ffffff url('../image/sect_list_bg-min.jpg');
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    background-position: top;
+    background-size: 100% 646px;
+    padding-bottom: 110px;
+}
+.section_list h2{
+    max-width: 900px;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 116px;
+}
+.card_s{
+    padding: 84px 44px 31px 44px;
+    background: #ffffff;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    position: relative;
+    margin-bottom: 110px;
+}
+.card_s .name{
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+}
+.card_s p{
+    margin-bottom: 0px;
+}
+.card_s .text{
+    min-height: 300px;
+}
+.card_s .img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -67.5px;
+    margin-top: -67.5px;
+    z-index: 5;
+}
+.section_list .container{
+    position: relative;
+    z-index: 10;
+}
+.section_list::after{
+    content: "";
+    background: url('../image/list_bot_line-min.png');
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 554px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+.section_list .line_group{
+    position: absolute;
+    z-index: 10;
+    bottom: -70px;
+    display: flex;
+    width: 100%;
+}
+.section_list .line_group .line{
+    background: var(--black2);
+    height: 100px;
+    width: 60%;
+    position: relative;
+}
+.section_list .line_group .line.line_lf{
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+    margin-right: -5px;
+    margin-left: -30px;
+}
+.section_list .line_group .line.line_rg{
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    margin-left: -5px;
+    margin-right: -30px;
+}
+.section_bot{
+    min-height: 500px;
+    background: var(--black2);
+    position: relative;
+    z-index: 50;
+}
+.section_list .h1{
+    position: absolute;
+    width: 428px;
+    background: url('../image/h1-min.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.section_list .h2{
+    position: absolute;
+    width: 428px;
+    background: url('../image/h1-min.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -30px;
+    top: 0;
+    bottom: 0;
 }
