@@ -586,3 +586,115 @@ footer{
     display: block;
     margin-right: 24px;
 }
+.open_menu{
+    border: 0px;
+    background: url('../image/menu.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    top: -13px;
+    cursor: pointer;
+    outline: none!important;
+    color: black;
+}
+.menu_bym{
+    background: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+}
+.mob_menu{
+    background: white;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.15);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: none;
+}
+.close_pop {
+    background: url('../image/cancel-music.svg');
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+.mobile_menu_logo {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.mobile_menu_logo img {
+    max-width: 160px;
+}
+.mobile_menu_list {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.mobile_menu_list li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+.mobile_menu_list li a {
+    display: block;
+    font-weight: 600;
+    color: #030303;
+    font-size: 20px;
+}
+.mobile_menu_list li a.active {
+    color: var(--yellow);
+}
+.menu_bym.show, .mob_menu.open {
+    display: block;
+}
+.menu_cont .item i{
+    display: none;
+}
+.menu_cont .item:not(:last-child){
+    margin-bottom: 30px;
+}
+.menu_cont .label{
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.menu_cont .item_cnt,
+.menu_cont  a{
+    color: var(--black);
+}
+body.m_opn{
+    overflow: hidden;
+}
+.modal .modal-content{
+    border: 0px;
+    border-radius: 0px;
+    background-color: var(--black);
+}
+.modal-header{
+    border: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.modal-body .cl_form{
+    padding-bottom: 0px;
+}

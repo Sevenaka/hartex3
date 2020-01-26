@@ -70,7 +70,7 @@
         font-size: 16px;
         margin-bottom: 30px;
     }
-    .col-md-4:not(:last-child) .ser_card{
+    .col-md-6:not(:last-child) .ser_card{
         margin-bottom: 60px;
     }
     .ser_card img{
@@ -98,7 +98,7 @@
         bottom: -40px;
         height: 200px;
     }
-    .col-md-4:not(:last-child) .fav_card{
+    .col-md-6:not(:last-child) .fav_card{
         margin-bottom: 60px;
     }
     .fav_card p{
@@ -132,6 +132,11 @@
     }
 }
 @media only screen and (min-width: 991px) {
+    .mob_menu,
+    .menu_bym,
+    .hide_pc{
+        display: none!important;
+    }
     .fot_cont .item:not(:last-child){
         margin-bottom: 10px;
     }
@@ -223,5 +228,31 @@
     h2{
         font-size: 40px;
         margin-bottom: 39px;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1124px) {
+    .fav_card{
+        margin-bottom: 40px;
+    }
+    .ser_card .text p{
+        min-height: 100px;
+    }
+    .ser_card{
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1234px) {
+    .fav_card p{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1494px) {
+    .section_vd::after{
+        right: -300px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1154px) {
+    .section_vd::after{
+        right: -500px;
     }
 }

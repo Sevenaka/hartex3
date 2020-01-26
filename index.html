@@ -15,12 +15,92 @@
 
 <body>
 
+	<!-- Modal -->
+	<div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="callModalLabel">Заказать</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+				<form class="cl_form">
+					<div class="form_row">
+						<label for="name3">Имя</label>
+						<input class="form-control" type="text" name="name3" id="name3" />
+					</div>
+					<div class="form_row">
+						<label for="phone3">Телефон</label>
+						<input class="form-control" type="tel" name="phone3" id="phone3" />
+					</div>
+					<div class="form_row">
+						<button class="btn_ye">заказать ремонт</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="menu_bym"></div>
+
+	<div class="mob_menu">
+		<div class="close_pop ico"></div>
+		<a href="/" class="mobile_menu_logo">
+			<img src="image/hartex-logo.png">
+		</a>
+		<nav>
+			<ul class="mobile_menu_list">
+				<li><a href="#">Компания</a></li>
+				<li><a class="active" href="#">Сервис</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+
+		<div class="menu_cont">
+			<div class="item">
+				<i class="ico ico_pattern ico_redphone"></i>
+				<div class="item_info">
+					<div class="label">Звоните</div>
+					<div class="item_cnt">
+						<a href="tel:+7776441444">+7 776 44 1 444</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<i class="ico ico_pattern ico_redtime"></i>
+				<div class="item_info">
+					<div class="label">время работы</div>
+					<div class="item_cnt">
+						Пн-Пт: 10.00 - 18.00
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<i class="ico ico_pattern ico_redmail"></i>
+				<div class="item_info">
+					<div class="label">email</div>
+					<div class="item_cnt">
+						<a href="mailto:info@hartex.kz">info@hartex.kz</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<header class="header">
 		<div class="header_top">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="flex header_contact">
+							<div class="item hide_pc">
+								<button class="open_menu">
+
+								</button>
+							</div>
 							<div class="item hide_mob">
 								<i class="ico ico_pattern ico_redphone"></i>
 								<div class="item_info">
@@ -122,7 +202,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="ser_card">
 							<div class="img">
 								<img src="image/ico1.png" alt="" />
@@ -132,10 +212,10 @@
 									Выездное обслужиaaвание
 								</p>
 							</div>
-							<button class="btn_ye">Заказать</button>
+							<button class="btn_ye" data-toggle="modal" data-target="#callModal">Заказать</button>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="ser_card">
 							<div class="img">
 								<img src="image/ico2.png" alt="" />
@@ -150,10 +230,10 @@
 									или 2000 моточасов
 								</p>
 							</div>
-							<button class="btn_ye">Заказать</button>
+							<button class="btn_ye" data-toggle="modal" data-target="#callModal">Заказать</button>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-12 col-lg-4">
 						<div class="ser_card">
 							<div class="img">
 								<img src="image/ico3.png" alt="" />
@@ -163,7 +243,7 @@
 									Собственный большой склад деталей
 								</p>
 							</div>
-							<button class="btn_ye">Заказать</button>
+							<button class="btn_ye" data-toggle="modal" data-target="#callModal">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -185,7 +265,7 @@
 							ВКЛЮЧАЕТ СЛЕДУЮЩИЕ МЕРОПРИЯТИЯ
 						</h2>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -198,7 +278,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -211,7 +291,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -224,7 +304,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -237,7 +317,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -250,7 +330,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -263,7 +343,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -276,7 +356,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -289,7 +369,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -302,7 +382,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -315,7 +395,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -328,7 +408,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="card_s">
 							<div class="img">
 								<img src="image/sico1.png" alt="" />
@@ -347,7 +427,7 @@
 		<section class="main_section section_bot">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="fav_card">
 							<div class="img">
 								<img src="image/fav1.png" alt="" />
@@ -358,7 +438,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="fav_card">
 							<div class="img">
 								<img src="image/fav2.png" alt="" />
@@ -369,7 +449,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-12 col-md-12 col-lg-4">
 						<div class="fav_card">
 							<div class="img">
 								<img src="image/fav3.png" alt="" />
@@ -509,4 +589,5 @@
 	<script type='text/javascript' src='js/script.js'></script>
 
 </body>
+
 </html>
