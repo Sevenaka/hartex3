@@ -1,6 +1,227 @@
 @media only screen and (max-width: 992px) {
-    
+    .hide_mob{
+        display: none!important;
+    }
+    .header{
+        padding-top: 54px;
+    }
+    .header .header_top{
+        height: 54px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .header_bottom{
+        padding-top: 20px;
+    }
+    .header_bottom h1{
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    .header_bottom .logo img{
+        max-width: 220px;
+    }
+    .header_bottom .line_group{
+        bottom: -5px;
+    }
+    .header_bottom .line_group .line.line_lf{
+        margin-left: -20px;
+    }
+    .header_bottom .line_group .line.line_rg{
+        margin-right: -20px;
+    }
+    .header_bottom .line_group .line{
+        width: 60%;
+    }
+    .main{
+        margin-top: -80px;
+        padding-top: 70px;
+    }
+    .section_vd{
+        padding-top: 0px;
+    }
+    .section_vd h2{
+        position: relative;
+        z-index: 50;
+    }
+    .section_vd::after{
+        right: -850px;
+    }
+    h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+        max-width: 300px;
+    }
+    .btn_def{
+        height: 60px;
+        padding: 0px 30px;
+        width: 100%;
+    }
+    .section_vd .line_group{
+        bottom: -5px;
+    }
+    .section_line{
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .ser_card .text{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .col-md-4:not(:last-child) .ser_card{
+        margin-bottom: 60px;
+    }
+    .ser_card img{
+        margin-bottom: 30px;
+    }
+    .btn_ye{
+        height: 60px;
+        padding: 0px 70px;
+    }
+    .section_line .container{
+        position: relative;
+        z-index: 20;
+    }
+    .section_list{
+        padding-top: 70px;
+        background-size: 100%;
+        padding-bottom: 0px;
+    }
+    .card_s{
+        padding: 74px 15px 20px 15px;
+        font-size: 18px;
+        margin-bottom: 90px;
+    }
+    .section_list::after{
+        bottom: -40px;
+        height: 200px;
+    }
+    .col-md-4:not(:last-child) .fav_card{
+        margin-bottom: 60px;
+    }
+    .fav_card p{
+        font-size: 18px;
+    }
+    .cal_bt_form{
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .bottom_menu {
+        text-align: center;
+    }
+    .bottom_menu .main_logo{
+        margin-bottom: 10px;
+    }
+    .bottom_menu h4{
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .fot_cont{
+        justify-content: center;
+    }
+    .fot_cont .item{
+        margin-bottom: 40px;
+    }
 }
 @media only screen and (min-width: 991px) {
-    
+    .fot_cont .item:not(:last-child){
+        margin-bottom: 10px;
+    }
+    footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .cal_bt_form{
+        padding-top: 50px;
+        max-width: 900px;
+        margin: 0px auto;
+    }
+    .fav_card p{
+        font-size: 24px;
+    }
+    .section_list::after{
+        bottom: -50px;
+        height: 554px;
+    }
+    .section_list .h1{
+        position: absolute;
+        width: 428px;
+        background: url('../image/h1-min.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .section_list .h2{
+        position: absolute;
+        width: 428px;
+        background: url('../image/h1-min.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: -30px;
+        top: 0;
+        bottom: 0;
+    }
+    .card_s{
+        padding: 84px 44px 31px 44px;
+        font-size: 20px;
+        margin-bottom: 110px;
+    }
+    .section_list{
+        padding-top: 100px;
+        background-size: 100% 646px;
+        padding-bottom: 110px;
+    }
+    .btn_ye{
+        height: 80px;
+        padding: 0px 70px;
+    }
+    .ser_card img{
+        margin-bottom: 70px;
+    }
+    .ser_card .text{
+        font-size: 20px;
+        margin-bottom: 63px;
+        min-height: 180px;
+    }
+    .section_line{
+        padding-bottom: 80px;
+        padding-top: 150px;
+    }
+    .btn_def{
+        height: 80px;
+        padding: 0px 70px;
+    }
+    .main{
+        margin-top: -100px;
+        padding-top: 100px;
+    }
+    .header_bottom{
+        padding-top: 47px;
+    }
+    .header_bottom h1{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .header_bottom .logo img{
+        max-width: 560px;
+    }
+    .section_vd{
+        padding-top: 40px;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 39px;
+    }
 }
