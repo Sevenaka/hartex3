@@ -5,6 +5,9 @@
     .header{
         padding-top: 54px;
     }
+    .card_s .name{
+        min-height: auto;
+    }
     .header .header_top{
         height: 54px;
         position: fixed;
@@ -132,6 +135,9 @@
     }
 }
 @media only screen and (min-width: 991px) {
+    .card_s .text{
+        min-height: 336px;
+    }
     .mob_menu,
     .menu_bym,
     .hide_pc{
@@ -180,7 +186,6 @@
     }
     .card_s{
         padding: 84px 44px 31px 44px;
-        font-size: 20px;
         margin-bottom: 110px;
     }
     .section_list{
@@ -254,5 +259,18 @@
 @media only screen and (min-width: 901px) and (max-width: 1154px) {
     .section_vd::after{
         right: -500px;
+    }
+}
+@media only screen and (min-width: 770px) and (max-width: 990px) {
+    .card_s .name{
+        min-height: 96px;
+    }
+}
+@media only screen and (min-width: 990px) and (max-width: 1140px) {
+    .card_s .name{
+        min-height: 96px;
+    }
+    .card_s{
+        padding: 84px 20px 21px 20px;
     }
 }

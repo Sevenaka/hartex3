@@ -362,6 +362,9 @@ h2{
     margin: 0px auto;
     padding-bottom: 116px;
 }
+.card_s .text{
+    font-size: 14px;
+}
 .card_s{
     background: rgba(255, 255, 255, 0.8);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -376,15 +379,12 @@ h2{
     font-size: 16px;
     text-transform: uppercase;
     display: flex;
-    min-height: 48px;
+    min-height: 96px;
     align-items: center;
     justify-content: center;
 }
 .card_s p{
     margin-bottom: 0px;
-}
-.card_s .text{
-    min-height: 300px;
 }
 .card_s .img{
     position: absolute;
